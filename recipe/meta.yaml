@@ -42,7 +42,7 @@ requirements:
     - khronos-opencl-icd-loader  # [win]
 {% if OSX_VARIANT == "pocl" %}
     - osx-pocl-opencl            # [osx]
-    - pocl >=0.14                # [unix]
+    - pocl >=0.14                # [osx]
 {% endif %}
 
   run:
@@ -50,7 +50,7 @@ requirements:
     - ocl-icd                    # [linux]
 {% if OSX_VARIANT == "pocl" %}
     - osx-pocl-opencl            # [osx]
-    - pocl >=0.14                # [unix]
+    - pocl >=0.14                # [osx]
 {% endif %}
 
 test:

@@ -10,10 +10,12 @@ environment:
 
   matrix:
     - TARGET_ARCH: x86
+      OSX_VARIANT: native
       CONDA_PY: 36
       CONDA_INSTALL_LOCN: C:\\Miniconda36
 
     - TARGET_ARCH: x64
+      OSX_VARIANT: native
       CONDA_PY: 36
       CONDA_INSTALL_LOCN: C:\\Miniconda36-x64
 
