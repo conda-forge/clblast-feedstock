@@ -1,6 +1,7 @@
 matrix:
   - []
   - [[OSX_VARIANT, 'native']]
+  - [[OSX_VARIANT, 'pocl']]
 
 travis:
   secure:
