@@ -2,7 +2,7 @@
 {% set version = "0.11.0" %}
 {% set sha256 = "947182733e51f9fc8317896047c95cf07fb3cd5f14437ea25a38e013f42f8e53" %}
 
-{% set OSX_VARIANT = os.environ.get("OSX_VARIANT", "native") %}
+{% set OSX_VARIANT = os.environ.get("OSX_VARIANT", "") %}
 
 package:
   name: {{ name|lower }}
@@ -18,10 +18,10 @@ build:
   script_env:
     - OSX_VARIANT
 
-{% if OSX_VARIANT != "native" %}
+{% if OSX_VARIANT != "" %}
   skip: True  # [not osx]
 {% else %}
-  skip: True  # [win and py<36]
+  skip: True  # [osx or (win and py<36)]
 {% endif %}
 
   features:
