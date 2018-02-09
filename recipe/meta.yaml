@@ -1,6 +1,6 @@
 {% set name = "CLBlast" %}
-{% set version = "0.11.0" %}
-{% set sha256 = "947182733e51f9fc8317896047c95cf07fb3cd5f14437ea25a38e013f42f8e53" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "6cd32becf2f07ba3fff3c0bafa345ffce44b9b78c75f47e138fe549d3a1ea23e" %}
 
 {% set OSX_VARIANT = os.environ.get("OSX_VARIANT", "") %}
 
