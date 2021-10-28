@@ -9,8 +9,7 @@ cmake \
     -DCMAKE_PREFIX_PATH="${PREFIX}" \
     -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
     -DCMAKE_INSTALL_LIBDIR="lib" \
-    -DOPENCL_ROOT=${PREFIX}" \
-    "${OPENCL_ROOT_FLAG}" \
+    -DOPENCL_ROOT="${PREFIX}" \
     ..
 
 make -j{CPU_COUNT}
