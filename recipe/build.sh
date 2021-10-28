@@ -12,5 +12,5 @@ cmake \
     -DOPENCL_ROOT="${PREFIX}" \
     ..
 
-make -j{CPU_COUNT}
+make -j${CPU_COUNT}
 make install
