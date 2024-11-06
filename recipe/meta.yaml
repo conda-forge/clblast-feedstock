@@ -1,6 +1,6 @@
 {% set name = "CLBlast" %}
-{% set version = "1.5.2" %}
-{% set sha256 = "ad804ec228100bd5a329a9dcd88d987e70b93c9fd714bb2b3dce6cf016b8c8e9" %}
+{% set version = "1.6.1" %}
+{% set sha256 = "e68d026108447cab53cb18d473b4363ab3958d7c8f97c522bbee1651069eec66" %}
 
 package:
   name: {{ name|lower }}
